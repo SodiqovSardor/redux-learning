@@ -6,7 +6,7 @@ export const editUser = createAsyncThunk(
     const res = await fetch(
       `https://jsonplaceholder.typicode.com/users/${userId}`,
       {
-        method: "PUT",
+        method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedUser),
       },
